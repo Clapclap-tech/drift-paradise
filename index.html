@@ -5,19 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
   <link rel="stylesheet" href="css/style.css">
-  <title>DRIFT PARADISE</title>
+  <title>FORMULA 1 PARADISE</title>
 </head>
 <body>
+
+    <div id="auth-section" class="wrapper">
+        <!-- Login Form -->
+        <div id="login-form" class="form-container">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Enter username" required>
+            <input type="password" id="login-password" placeholder="Enter password" required>
+            <button onclick="login()">Login</button>
+            <p class="switch-form">Don't have an account? <a href="#" onclick="showRegisterForm()">Sign up</a></p>
+        </div>
+
+        <!-- Register Form -->
+        <div id="register-form" class="form-container" style="display: none;">
+            <h2>Register</h2>
+            <input type="text" id="reg-username" placeholder="Enter username" required>
+            <input type="password" id="reg-password" placeholder="Enter password" required>
+            <button onclick="register()">Register</button>
+            <p class="switch-form">Already have an account? <a href="#" onclick="showLoginForm()">Log in</a></p>
+        </div>
+    </div>
+
+
   <header>
-      <h1 class="logo-name">DRIFT<span>PARADISE</span></h1>
+      <h1 class="logo-name">F1<span>PARADISE</span></h1>
 
     <nav class="nav">
       <ul class="nav-list">
         <li><a class="nav-link" href="#">Home</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#events">Community</a></li>
-        <li><a class="nav-link" href="#techniques">Events</a></li>
-        <li><a class="nav-link" href="#gallery">News</a></li>
+        <li><a class="nav-link" href="#races">Races</a></li>
+        <li><a class="nav-link" href="#techniques">Technology</a></li>
+        <li><a class="nav-link" href="#gallery">Gallery</a></li>
         <li><a class="nav-link" href="#community">Community</a></li>
       </ul>
     </nav>
@@ -28,113 +50,106 @@
 
   <section id="about">
     <div class="container">
-        <h2>About Drifting</h2>
+        <h2>About Formula 1</h2>
         <div class="event">
-            <h3>The Art of Drifting</h3>
-            <p>Experience the thrilling motorsport of drifting, where tire smoke meets precision driving. Drifting is not just a motorsport; it's an art form that combines skill, control, and style.</p>
+            <h3>The Pinnacle of Motorsport</h3>
+            <p>Formula 1 represents the highest level of motorsport, combining cutting-edge technology, incredible driver skill, and high-speed thrills. It's more than a race; it's an engineering marvel.</p>
         </div>
         <div class="event">
-            <h3>Master the Technique</h3>
-            <p>Drifting involves intentionally oversteering your car, causing the rear wheels to lose traction, and maintaining control through a graceful and controlled slide. It's a symphony of power and finesse, where drivers dance with their machines.</p>
+            <h3>Global Spectacle</h3>
+            <p>With races hosted in iconic circuits worldwide, Formula 1 captures the essence of speed, innovation, and global competition. Each track offers unique challenges, from tight street circuits to high-speed straights.</p>
         </div>
         <div class="event">
-            <h3>Join the Community</h3>
-            <p>At Drifting Paradise, we celebrate the culture and community that surrounds drifting. Whether you're a seasoned drifter or just getting started, our events and resources are here to fuel your passion for the sport.</p>
+            <h3>Drivers and Teams</h3>
+            <p>Formula 1 is home to legendary drivers and teams. From the high-tech factories to the pit wall strategies, every element contributes to the battle for the championship.</p>
         </div>
         <div class="event">
-            <h3>Explore the Thrill</h3>
-            <p>Come join us in exploring the world of drifting, from the basics of techniques to the excitement of high-speed competitions. Discover the adrenaline, camaraderie, and sheer thrill that make drifting a truly unique and exhilarating experience.</p>
+            <h3>Feel the Adrenaline</h3>
+            <p>Experience the roaring engines, daring overtakes, and split-second decisions that define every F1 race. This is the ultimate test of speed and precision.</p>
         </div>
     </div>
-</section>
+  </section>
 
-
-<section id="events">
+  <section id="races">
     <div class="container">
-        <h2>Upcoming Drifting Events</h2>
+        <h2>Upcoming Formula 1 Races</h2>
         <div class="event">
-            <h3>Event 1</h3>
-            <p>Date: January 15, 2023</p>
-            <p>Location: Drift Circuit XYZ</p>
-            <p>Details: Join us for an adrenaline-pumping day of drifting action at Drift Circuit XYZ. Watch professional drifters showcase their skills and even participate in a drift experience.</p>
+            <h3>Grand Prix 1</h3>
+            <p>Date: March 20, 2024</p>
+            <p>Location: Bahrain International Circuit</p>
+            <p>Details: The season opener promises intense action under the lights. Join us for the Bahrain GP and witness incredible night racing.</p>
         </div>
         <div class="event">
-            <h3>Event 2</h3>
-            <p>Date: February 20, 2023</p>
-            <p>Location: Drift City Arena</p>
-            <p>Details: Get ready for a thrilling drift competition at Drift City Arena. Spectators can enjoy food, music, and, of course, high-speed drift battles.</p>
+            <h3>Grand Prix 2</h3>
+            <p>Date: April 7, 2024</p>
+            <p>Location: Jeddah Corniche Circuit</p>
+            <p>Details: A thrilling street circuit in Saudi Arabia with high-speed corners and stunning coastal views. Expect the unexpected!</p>
         </div>
         <div class="event">
-            <h3>Event 3</h3>
-            <p>Date: March 10, 2023</p>
-            <p>Location: Mountain Drift Challenge</p>
-            <p>Details: Experience the beauty of mountain drifting at the Mountain Drift Challenge. Watch as drifters conquer winding roads and tight corners.</p>
+            <h3>Grand Prix 3</h3>
+            <p>Date: May 28, 2024</p>
+            <p>Location: Circuit de Monaco</p>
+            <p>Details: Witness the glamour of Monaco as drivers navigate narrow streets in one of the most iconic tracks in motorsport.</p>
         </div>
     </div>
-</section>
+  </section>
 
-
-
-<section id="techniques">
+  <section id="techniques">
     <div class="container">
-        <h2>Drifting Techniques</h2>
+        <h2>Formula 1 Technology</h2>
         <div class="technique">
-            <h3>Power Over Drift</h3>
-            <p>The power over drift is a classic technique where you use the car's power to break traction in the rear wheels. Step on the gas, turn the steering wheel in the opposite direction, and counter-steer to control the drift.</p>
+            <h3>Hybrid Power Units</h3>
+            <p>Modern F1 cars use advanced hybrid engines that combine traditional combustion power with electric energy recovery systems for unmatched efficiency and performance.</p>
         </div>
         <div class="technique">
-            <h3>E-Brake Drift</h3>
-            <p>The e-brake drift involves pulling the handbrake while cornering to initiate a controlled slide. This technique requires precise timing and coordination of the handbrake and steering.</p>
+            <h3>Aerodynamics</h3>
+            <p>From the front wing to the rear diffuser, every curve and surface is optimized for maximum downforce and minimal drag. Aerodynamics are key to lap-time gains.</p>
         </div>
         <div class="technique">
-            <h3>Pendulum Drift</h3>
-            <p>The feint drift is a deceptive move where you make a sudden fake turn in one direction, then quickly steer in the opposite direction to induce oversteer. It's all about catching your opponents off guard.</p>
+            <h3>Advanced Tires</h3>
+            <p>Formula 1 tires are engineered for extreme performance. Drivers manage degradation and grip, with strategies often revolving around tire choices.</p>
         </div>
     </div>
-</section>
+  </section>
 
-
-
-<section id="gallery">
+  <section id="gallery">
     <div class="container">
         <h2>Gallery</h2>
-        <div class="image">
-            <img src="img/gallery-img-1.jpg" alt="Drift Image 1">
-            <div class="caption"></div>
+        <div class="media">
+            <img src="img/Mercedes-AMG W15 E PERFORMANCE - Lewis Hamilton - Front Low.avif" alt="Drift Image 1">
+            <div class="caption">Mercedes AMG W15</div>
         </div>
-        <div class="image">
-            <img src="img/gallery-img-2.jpg" alt="Drift Image 2">
-            <div class="caption"></div>
+        <div class="media">
+            <img src="img/Mercedes-AMG W15 E PERFORMANCE - Lewis Hamilton - Front Quarter.avif" alt="Drift Image 2">
+            <div class="caption">Mercedes AMG W15</div>
+        </div>
+        <div class="media video">
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/mdnF9R-Bzpg?si=XUp4jEBahHqrPhOS&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="caption">Experience the thrill!</div>
         </div>
     </div>
 </section>
 
-<section id="community">
+  <section id="community">
     <div class="container">
-        <h2>Drifting Community</h2>
+        <h2>Formula 1 Community</h2>
         <div class="community-links">
-            <a href="https://discord.com/your-discord-link">
+            <a href="https://discord.com/f1-community-link">
                 <img src="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-discord-icon-transparent-free-png.png" alt="Discord Logo">
             </a>
-            <a href="https://formuladrift.com">
-                <img src="https://yt3.googleusercontent.com/ytc/APkrFKZB-nbBRiyf6crPdRML5I8lpkIhB1i5dZmSk0Cx=s900-c-k-c0x00ffffff-no-rj" alt="Website Logo">
+            <a href="https://formula1.com">
+                <img src="img/F1-Logo-9.svg" alt="Formula 1 Logo">
             </a>
         </div>
     </div>
-</section>
+  </section>
 
-<div class="scroll-to-top">
-    <div class="arrow-circle" id="scrollToTop">
-        <span class="arrow">&#9650;</span>
-    </div>
-</div>
+  <footer>
+    <p>&copy; 2024 Formula 1 Paradise</p>
+  </footer>
 
-
-
-<footer>
-    <p>&copy; 2023 Drifting Paradise</p>
-</footer>
-
-<script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bcrypt.js/2.4.3/bcrypt.min.js"></script>
+  <script src="js/script.js"></script>
+  
 </body>
 </html>
